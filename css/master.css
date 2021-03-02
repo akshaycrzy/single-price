@@ -1,0 +1,167 @@
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+}
+
+h1 {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  font-size: 21px;
+}
+
+h2 {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 1.5rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 17px;
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  color: hsl(204, 43%, 93%);
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+li {
+  margin-bottom: 6.5px;
+}
+
+span {
+  margin-left: 0.8rem;
+  font-weight: 400;
+  font-size: 14px;
+  color: #4abebd;
+  margin-top: 10px;
+}
+
+/* || CONTAINER */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* || INTRO SECTION */
+.intro-section {
+  background-color: #fff;
+  padding: 2rem 2.5rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+.intro-section p {
+  color: hsl(218, 22%, 67%);
+  letter-spacing: 0.6px;
+  font-size: 14px;
+}
+
+/* || DETAILS SECTION */
+.details-section {
+  display: flex;
+  color: #fff;
+}
+
+/* || SUBSCRIPTION SECTION */
+.subscription-sec {
+  background-color: #2bb3b1;
+  padding: 2.5rem;
+  border-bottom-left-radius: 10px;
+  width: 50%;
+}
+
+.dollar-flex {
+  display: flex;
+}
+
+.dollar {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.button {
+  text-align: center;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 5px;
+  border: 1px solid hsl(71, 73%, 54%);
+  margin-top: 2.2rem;
+}
+
+.button p {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+
+/* || REASONS SECTION */
+.reason-sec {
+  background-color: #4abebd;
+  padding: 2.5rem;
+  border-bottom-right-radius: 10px;
+  width: 50%;
+}
+
+
+/* || FOR MOBILE RESOLUTION 360 */
+@media screen and (max-width: 360px) {
+  .container {
+    height: 100vh;
+    width: 80%;
+  }
+
+  .intro-section {
+    width: 70%;
+  }
+
+  .details-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscription-sec {
+    width: 70%;
+    border-radius: 0;
+  }
+  .reason-sec {
+    width: 70%;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+/* || SCREEN RESOLUTION 768 */
+@media screen and (max-width: 768px) {
+  .container {
+    height: 100vh;
+    width: 50%;
+  }
+
+  .intro-section {
+    width: 70%;
+  }
+
+  .details-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscription-sec {
+    width: 70%;
+    border-radius: 0;
+  }
+  .reason-sec {
+    width: 70%;
+    border-bottom-left-radius: 10px;
+  }
+}
